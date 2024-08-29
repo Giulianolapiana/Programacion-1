@@ -26,7 +26,6 @@ if(numUsuario % 10 == 5 or numUsuario % 10 == 0):
 """ divisible por 9 """
 numUsuario3 = numUsuario
 while(numUsuario3 != 0):
-    print(numUsuario3 % 10)
     num9 = numUsuario3 % 10 + num9
     numUsuario3 = int(numUsuario3/10)
     
@@ -35,3 +34,6 @@ if (num9 % 9 == 0):
 
 
 """ divisible por 10 """
+
+if(numUsuario % 10 == 0):
+    print("El numero es divisible por 10")
