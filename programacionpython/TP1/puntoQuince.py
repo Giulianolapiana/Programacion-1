@@ -1,5 +1,5 @@
 import math
-numUsuario = input("Ingrese un numero y le diremos que criterios de visibilidad cumple ")
+numUsuario = input("Ingrese un numero y le diremos que criterios de divisibilidad cumple -> ")
 numUsuario = int(numUsuario)
 num3 = 0
 num5 = 0
