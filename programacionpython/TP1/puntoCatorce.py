@@ -7,7 +7,7 @@ intentos = 1
 while (numUsuario>100 or numUsuario<0):
     numUsuario = input("ingrese un numero dentro de 0 y 100 ")
     numUsuario = int(numUsuario)
-    intentos += 1
+   
 
 while (numUsuario != numRandom):
     if(numUsuario > numRandom):
