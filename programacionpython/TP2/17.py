@@ -6,15 +6,15 @@ class funcionesPrograma:
         self.dia = dia
         self.mes = mes
         self.anio = anio
-    def getFechaString(dia,mes,anio):
+    def getFechaString(self):
 
-        palabrasDia = num2words(dia, lang='es')
-        palabraAnio = num2words(anio, lang='es')
+        palabrasDia = num2words(self.dia, lang='es')
+        palabraAnio = num2words(self.anio, lang='es')
         mesesLetras = {
             1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril", 5: "Mayo", 6: "Junio", 7: "Julio", 8: "Agosto", 9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre"
         }
-        if 1 <= mes <= 12:
-            palabraMes = mesesLetras[mes]
+        if 1 <= self.mes <= 12:
+            palabraMes = mesesLetras[self.mes]
         else:
             return "Número de mes inválido. Debe ser un número entre 1 y 12."
         
@@ -29,7 +29,6 @@ dia = int(partes_fecha[0])
 mes = int(partes_fecha[1])
 anio = int(partes_fecha[2])
 
-print(dia,mes,anio)
-
 # Llamamos a la función getFechaString
-funcionesPrograma.getFechaString(dia,mes,anio)
+fecha = funcionesPrograma(dia, mes, anio)
+fecha.getFechaString()
