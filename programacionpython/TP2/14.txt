@@ -1,0 +1,22 @@
+En Python, no existe una distinción tan estricta entre variables de tipo valor y de tipo referencia como en Java
+
+En Java, las variables primitivas (como int, char, boolean, etc.) se almacenan directamente en la memoria como valores. Mientras que las variables que contienen objetos son referencias que apuntan a una dirección de memoria donde se almacena el objeto
+
+En Python, todos los tipos de datos son objetos, ya sea un entero, una lista o una clase personalizada. Sin embargo, hay una diferencia en cómo se manejan ciertos tipos de datos:
+
+Tipos inmutables (como int, float, str, tuple): Estos se comportan como "tipo valor", ya que no pueden ser modificados después de ser creados. Si modificamos uno, se crea un nuevo objeto.
+
+Tipos mutables (como list, dict, set): Se comportan como "tipo referencia". Si se modifica un objeto mutable, la variable original que lo referencia también verá reflejados esos cambios.
+# Inmutables (comportamiento tipo valor)
+a = 10
+b = a
+b += 5
+print(a)  # Salida: 10
+print(b)  # Salida: 15
+
+# Mutables (comportamiento tipo referencia)
+lista1 = [1, 2, 3]
+lista2 = lista1
+lista2.append(4)
+print(lista1)  # Salida: [1, 2, 3, 4]
+print(lista2)  # Salida: [1, 2, 3, 4]

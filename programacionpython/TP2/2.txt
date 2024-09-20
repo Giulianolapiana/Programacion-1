@@ -1,0 +1,10 @@
+En Java, las variables tienen un tamaño máximo determinado por el tipo de dato que representan. Si se asigna un valor que excede ese límite, se produce un desbordamiento(overflow) de la variable.
+
+Un byte en Java tiene un rango de -128 a 127. Si intentamos asignar un valor mayor, el valor "se desborda" y vuelve al inicio del rango, lo que puede generar comportamientos inesperados.
+
+byte b = 127; // Máximo valor posible
+b = (byte) (b + 1); // Esto desborda el valor
+System.out.println(b); // Salida: -128
+
+En Python, las variables no tienen este problema porque las enteras (int) pueden crecer más allá de los límites de los tipos de datos predefinidos. Python maneja automáticamente los números muy grandes utilizando enteros de precisión arbitraria
+
