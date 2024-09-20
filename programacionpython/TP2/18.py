@@ -4,6 +4,7 @@ class funcionesPrograma:
         self.dia = dia
         self.mes = mes
         self.anio = anio
+    # funcion que transforma la fecha a palabras
     def getFechaString(self):
         from num2words import num2words
         palabrasDia = num2words(self.dia, lang='es')
@@ -19,14 +20,15 @@ class funcionesPrograma:
         print(f"El número en palabras es: {palabrasDia} de {palabraMes} del {palabraAnio}")
     #funcion para poner la fecha, importamos la libreria date
     def getFechaDate(self):
+        #importamos libreria date
         from datetime import date
         return date(self.anio, self.mes, self.dia)
 
-
-
+#ingresamos los datos
 dia = int(input("Ingrese el día: "))
 mes = int(input("Ingrese el mes: "))
 anio = int(input("Ingrese el año: "))
 
+#llamamos a la clase y imprimimos la fecha
 fecha = funcionesPrograma(dia, mes, anio)
 print(fecha.getFechaDate())

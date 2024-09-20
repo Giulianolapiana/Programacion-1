@@ -2,6 +2,7 @@
 from num2words import num2words
 
 class funcionesPrograma:
+    #damos inicio y cargamos el parametro self
     def __init__(self,dia,mes,anio):
         self.dia = dia
         self.mes = mes
