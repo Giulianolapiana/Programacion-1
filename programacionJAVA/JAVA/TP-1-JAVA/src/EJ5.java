@@ -24,7 +24,6 @@ public class EJ5 {
         System.out.println("precio del combustible: $" + precio);
         System.out.println("El costo total es de: $" + String.format("%.2f", costoViaje));
 
-
     }
 }
 
