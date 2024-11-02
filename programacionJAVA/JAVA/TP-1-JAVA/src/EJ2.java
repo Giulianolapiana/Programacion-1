@@ -18,27 +18,6 @@ public class EJ2 {
         ejercicio = sc.nextLine();
 
 
-        // Determinar las calorias quemadas
-        double caloriasQuemadas;
-        int calBicicleta = 10;
-        int calNado = 5;
-        int calCorrer = 15;
-
-        switch (ejercicio){
-            case "correr":
-                caloriasQuemadas = duracion * calCorrer * peso * 0.467;
-                break;
-            case "nadar":
-                caloriasQuemadas = duracion * calNado * (peso) * 0.467;
-                break;
-            case "bicicleta":
-                caloriasQuemadas = duracion * calBicicleta * (peso) * 0.467;
-                break;
-            default:
-                System.out.println("Ejercicio no valido");
-                return;
-        }
-
 
         System.out.println("Datos introducidos");
         System.out.println("peso: " + peso);
